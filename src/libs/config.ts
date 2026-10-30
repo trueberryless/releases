@@ -1,4 +1,4 @@
-export const GITHUB_ORGANIZATION = "trueberryless-org";
+export const GITHUB_OWNER = "trueberryless";
 
 export const PROFILE = {
   login: "trueberryless",
