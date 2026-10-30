@@ -2,7 +2,7 @@
   "name": "@trueberryless/releases",
   "version": "0.0.0",
   "private": true,
-  "description": "A page listing the recent releases of the trueberryless-org GitHub organization.",
+  "description": "A page listing the recent releases of the trueberryless GitHub repositories.",
   "homepage": "https://releases.felixs.dev",
   "bugs": {
     "url": "https://github.com/trueberryless/releases/issues"

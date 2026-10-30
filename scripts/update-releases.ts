@@ -1,7 +1,7 @@
 import { writeFile } from "node:fs/promises";
 
-import { GITHUB_ORGANIZATION, RELEASES_LIMIT } from "../src/libs/config.ts";
-import { fetchOrganizationRepositories } from "../src/libs/github.ts";
+import { GITHUB_OWNER, RELEASES_LIMIT } from "../src/libs/config.ts";
+import { fetchOwnerRepositories } from "../src/libs/github.ts";
 import { getReleases, serializeReleases } from "../src/libs/releases.ts";
 
 const RELEASES_DATA_URL = new URL("../src/data/releases.json", import.meta.url);
@@ -14,14 +14,11 @@ if (!token) {
   );
 }
 
-const repositories = await fetchOrganizationRepositories(
-  GITHUB_ORGANIZATION,
-  token
-);
+const repositories = await fetchOwnerRepositories(GITHUB_OWNER, token);
 const releases = getReleases(repositories, RELEASES_LIMIT);
 
 await writeFile(RELEASES_DATA_URL, serializeReleases(releases));
 
 console.info(
-  `[releases] Saved ${releases.length} releases from ${repositories.length} repositories of the \`${GITHUB_ORGANIZATION}\` GitHub organization.`
+  `[releases] Saved ${releases.length} releases from ${repositories.length} repositories of \`${GITHUB_OWNER}\` on GitHub.`
 );

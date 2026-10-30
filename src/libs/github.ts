@@ -27,9 +27,9 @@ const RELEASES_FIELDS = `
 `;
 
 const REPOSITORIES_QUERY = `
-  query ($cursor: String, $organization: String!, $releasesCursor: String) {
-    organization(login: $organization) {
-      repositories(first: 20, after: $cursor, isFork: false, privacy: PUBLIC) {
+  query ($cursor: String, $owner: String!, $releasesCursor: String) {
+    repositoryOwner(login: $owner) {
+      repositories(first: 20, after: $cursor, isFork: false, ownerAffiliations: [OWNER], privacy: PUBLIC) {
         pageInfo {
           endCursor
           hasNextPage
@@ -51,8 +51,8 @@ const REPOSITORY_RELEASES_QUERY = `
   }
 `;
 
-export async function fetchOrganizationRepositories(
-  organization: string,
+export async function fetchOwnerRepositories(
+  owner: string,
   token: string
 ): Promise<GitHubRepository[]> {
   const repositories: GitHubRepository[] = [];
@@ -61,27 +61,21 @@ export async function fetchOrganizationRepositories(
   do {
     const data: RepositoriesQueryData = await queryGitHub(
       REPOSITORIES_QUERY,
-      { cursor, organization, releasesCursor: null },
+      { cursor, owner, releasesCursor: null },
       token
     );
 
-    if (!data.organization) {
-      throw new Error(
-        `The GitHub organization \`${organization}\` could not be found.`
-      );
+    if (!data.repositoryOwner) {
+      throw new Error(`The GitHub account \`${owner}\` could not be found.`);
     }
 
-    const { nodes, pageInfo } = data.organization.repositories;
+    const { nodes, pageInfo } = data.repositoryOwner.repositories;
 
     for (const repository of nodes) {
       repositories.push({
         name: repository.name,
         releases: {
-          nodes: await fetchAllRepositoryReleases(
-            organization,
-            repository,
-            token
-          ),
+          nodes: await fetchAllRepositoryReleases(owner, repository, token),
         },
       });
     }
@@ -208,7 +202,7 @@ interface ReleasesConnection {
 }
 
 interface RepositoriesQueryData {
-  organization: {
+  repositoryOwner: {
     repositories: {
       nodes: RepositoryNode[];
       pageInfo: PageInfo;

@@ -1,5 +1,5 @@
 ---
-import { GITHUB_ORGANIZATION } from "../libs/config";
+import { GITHUB_OWNER } from "../libs/config";
 import { type Release, isSeparatedFromPreviousRelease } from "../libs/releases";
 import { formatTimeAgo } from "../libs/time";
 import { getHighlightedVersion } from "../libs/version";
@@ -11,7 +11,7 @@ interface Props {
 
 const { previousRelease, release } = Astro.props;
 
-const repositoryUrl = `https://github.com/${GITHUB_ORGANIZATION}/${release.repository}`;
+const repositoryUrl = `https://github.com/${GITHUB_OWNER}/${release.repository}`;
 const version = getHighlightedVersion(release.version);
 const publishedAt = new Date(release.publishedAt);
 ---
@@ -30,7 +30,7 @@ const publishedAt = new Date(release.publishedAt);
     aria-hidden="true"
   >
     <img
-      src={`https://github.com/${GITHUB_ORGANIZATION}.png?size=96`}
+      src={`https://github.com/${GITHUB_OWNER}.png?size=96`}
       alt=""
       width="48"
       height="48"
@@ -43,7 +43,7 @@ const publishedAt = new Date(release.publishedAt);
     <div class="main">
       <a href={repositoryUrl} target="_blank" class="repo-link">
         <div class="owner">
-          {GITHUB_ORGANIZATION}
+          {GITHUB_OWNER}
           <span class="slash">/</span>
         </div>
         <div class="name">
