@@ -1,5 +1,32 @@
 [
   {
+    "id": "RE_kwDONKugD84Zn3yG",
+    "package": "astro-contributors",
+    "publishedAt": "2026-10-31T11:04:33Z",
+    "repository": "astro-contributors",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/astro-contributors/releases/tag/astro-contributors%400.10.1",
+    "version": "0.10.1"
+  },
+  {
+    "id": "RE_kwDONCzicM4Zn1Pr",
+    "package": "starlight-sidebar-topics-dropdown",
+    "publishedAt": "2026-10-31T10:41:43Z",
+    "repository": "starlight-sidebar-topics-dropdown",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-sidebar-topics-dropdown/releases/tag/starlight-sidebar-topics-dropdown%400.7.1",
+    "version": "0.7.1"
+  },
+  {
+    "id": "RE_kwDOMES_H84ZnzBZ",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-10-31T10:20:42Z",
+    "repository": "starlight-view-modes",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-view-modes/releases/tag/starlight-view-modes%400.15.4",
+    "version": "0.15.4"
+  },
+  {
     "id": "RE_kwDONRUzM84ZPoNp",
     "package": "template-files",
     "publishedAt": "2026-10-25T16:42:20Z",
