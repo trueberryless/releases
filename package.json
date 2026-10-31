@@ -26,6 +26,7 @@
     "version": "pnpm changeset version && pnpm i --no-frozen-lockfile"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
     "astro": "^7.3.5"
   },
   "devDependencies": {
