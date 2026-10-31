@@ -1,13 +1,13 @@
 ---
+import { SITE_DESCRIPTION, SITE_TITLE } from "../libs/config";
+import { RSS_PATH } from "../libs/rss";
+
 interface Props {
   description?: string;
   title?: string;
 }
 
-const {
-  description = "Recent releases of the trueberryless GitHub repositories.",
-  title = "Releases",
-} = Astro.props;
+const { description = SITE_DESCRIPTION, title = "Releases" } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,6 +17,12 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={SITE_TITLE}
+      href={new URL(RSS_PATH, Astro.site)}
+    />
     <meta name="color-scheme" content="dark light" />
     <title>{title}</title>
     <meta

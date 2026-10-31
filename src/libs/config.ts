@@ -7,3 +7,6 @@ export const PROFILE = {
 };
 
 export const RELEASES_LIMIT = 300;
+
+export const SITE_DESCRIPTION = `Recent releases of the ${GITHUB_OWNER} GitHub repositories.`;
+export const SITE_TITLE = `${PROFILE.name} is releasing...`;
