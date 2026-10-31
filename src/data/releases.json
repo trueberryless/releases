@@ -1,5 +1,23 @@
 [
   {
+    "id": "RE_kwDONMwaYM4Zn_EV",
+    "package": "starlight-cooler-credit",
+    "publishedAt": "2026-10-31T12:07:43Z",
+    "repository": "starlight-cooler-credit",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-cooler-credit/releases/tag/starlight-cooler-credit%400.7.1",
+    "version": "0.7.1"
+  },
+  {
+    "id": "RE_kwDON5ggOM4Zn985",
+    "package": "starlight-group-pages",
+    "publishedAt": "2026-10-31T11:58:23Z",
+    "repository": "starlight-group-pages",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-group-pages/releases/tag/starlight-group-pages%400.2.1",
+    "version": "0.2.1"
+  },
+  {
     "id": "RE_kwDONKugD84Zn3yG",
     "package": "astro-contributors",
     "publishedAt": "2026-10-31T11:04:33Z",
