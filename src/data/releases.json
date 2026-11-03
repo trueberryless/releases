@@ -1,5 +1,59 @@
 [
   {
+    "id": "RE_kwDORNQtp84Zyr8a",
+    "package": "starlight-theme-rose-pine",
+    "publishedAt": "2026-11-03T13:13:17Z",
+    "repository": "starlight-theme-rose-pine",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-theme-rose-pine/releases/tag/starlight-theme-rose-pine%400.3.1",
+    "version": "0.3.1"
+  },
+  {
+    "id": "RE_kwDOOVA_Yc4Zyp_l",
+    "package": "starlight-theme-next",
+    "publishedAt": "2026-11-03T13:06:00Z",
+    "repository": "starlight-theme-next",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-theme-next/releases/tag/starlight-theme-next%400.5.1",
+    "version": "0.5.1"
+  },
+  {
+    "id": "RE_kwDONkEDbs4ZyoBQ",
+    "package": "starlight-sidebar-swipe",
+    "publishedAt": "2026-11-03T12:58:20Z",
+    "repository": "starlight-sidebar-swipe",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-sidebar-swipe/releases/tag/starlight-sidebar-swipe%400.4.1",
+    "version": "0.4.1"
+  },
+  {
+    "id": "RE_kwDOOHfQ6s4Zyk0v",
+    "package": "starlight-save-file-component",
+    "publishedAt": "2026-11-03T12:47:52Z",
+    "repository": "starlight-save-file-component",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-save-file-component/releases/tag/starlight-save-file-component%400.2.1",
+    "version": "0.2.1"
+  },
+  {
+    "id": "RE_kwDOQ2OPic4Zyi_u",
+    "package": "starlight-recipes",
+    "publishedAt": "2026-11-03T12:41:53Z",
+    "repository": "starlight-recipes",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-recipes/releases/tag/starlight-recipes%400.4.1",
+    "version": "0.4.1"
+  },
+  {
+    "id": "RE_kwDONVHsm84Zyg1t",
+    "package": "starlight-latest-version",
+    "publishedAt": "2026-11-03T12:33:15Z",
+    "repository": "starlight-latest-version",
+    "summary": "Updates the repository links after the move from the trueberryless-org GitHub organization to the trueberryless account.",
+    "url": "https://github.com/trueberryless/starlight-latest-version/releases/tag/starlight-latest-version%400.9.1",
+    "version": "0.9.1"
+  },
+  {
     "id": "RE_kwDONMwaYM4Zn_EV",
     "package": "starlight-cooler-credit",
     "publishedAt": "2026-10-31T12:07:43Z",
