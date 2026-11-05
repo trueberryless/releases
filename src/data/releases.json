@@ -1,5 +1,23 @@
 [
   {
+    "id": "RE_kwDONJ5zGc4Z5r19",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2026-11-04T23:02:11Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "Fixes the injected resource pages failing to build because their routes still pointed to the old @trueberryless-org/starlight-plugins-docs-components package.",
+    "url": "https://github.com/trueberryless/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.7.2",
+    "version": "0.7.2"
+  },
+  {
+    "id": "RE_kwDONJ5zGc4Z5qsu",
+    "package": "starlight-plugins-docs-components",
+    "publishedAt": "2026-11-04T22:55:37Z",
+    "repository": "starlight-plugins-docs-components",
+    "summary": "Changes the default GitHub owner from trueberryless-org to trueberryless, so the repository and edit links of the plugins point to their new location.",
+    "url": "https://github.com/trueberryless/starlight-plugins-docs-components/releases/tag/starlight-plugins-docs-components%400.7.1",
+    "version": "0.7.1"
+  },
+  {
     "id": "RE_kwDORNQtp84Zyr8a",
     "package": "starlight-theme-rose-pine",
     "publishedAt": "2026-11-03T13:13:17Z",
