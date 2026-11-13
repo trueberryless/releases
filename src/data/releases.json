@@ -1,5 +1,14 @@
 [
   {
+    "id": "RE_kwDOMES_H84agk39",
+    "package": "starlight-view-modes",
+    "publishedAt": "2026-11-13T21:17:09Z",
+    "repository": "starlight-view-modes",
+    "summary": "⚠️ BREAKING CHANGE: The minimum supported version of Starlight is now 0.43.0.",
+    "url": "https://github.com/trueberryless/starlight-view-modes/releases/tag/starlight-view-modes%400.16.0",
+    "version": "0.16.0"
+  },
+  {
     "id": "RE_kwDONJ5zGc4Z5r19",
     "package": "starlight-plugins-docs-components",
     "publishedAt": "2026-11-04T23:02:11Z",
