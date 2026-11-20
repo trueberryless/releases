@@ -1,5 +1,14 @@
 [
   {
+    "id": "RE_kwDONKugD84a9gn-",
+    "package": "astro-contributors",
+    "publishedAt": "2026-11-20T06:10:09Z",
+    "repository": "astro-contributors",
+    "summary": "Fixes ContributorList fetching the contributors of the same GitHub repository again for every render during a build.",
+    "url": "https://github.com/trueberryless/astro-contributors/releases/tag/astro-contributors%400.10.2",
+    "version": "0.10.2"
+  },
+  {
     "id": "RE_kwDOMES_H84agk39",
     "package": "starlight-view-modes",
     "publishedAt": "2026-11-13T21:17:09Z",
